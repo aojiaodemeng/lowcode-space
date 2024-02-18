@@ -10,7 +10,7 @@ ReactDOM.createRoot(document.getElementById("EditorApp")!).render(
     <ConfigProvider
       theme={{
         token: {
-          colorPrimary: "#EB676A",
+          colorPrimary: "#B0CB56",
           colorBorderSecondary: "#eaeaeb",
           colorFillAlter: "#f6f8fa",
         },

@@ -1,6 +1,6 @@
 import { theme } from "antd";
 import { css } from "@emotion/css";
-
+import { Iframe } from "./iframe";
 export const Canvas: React.FC = () => {
   const { token } = theme.useToken();
 
@@ -22,7 +22,9 @@ export const Canvas: React.FC = () => {
 
   return (
     <div className={classes.main}>
-      <div className={classes.canvas}>Canvas</div>
+      <div className={classes.canvas}>
+        <Iframe />
+      </div>
     </div>
   );
 };

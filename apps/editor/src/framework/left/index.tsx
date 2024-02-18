@@ -1,5 +1,6 @@
 import { css } from "@emotion/css";
 import { Tabs, TabsProps, theme, Space, Typography, Divider } from "antd";
+import { MaterialList } from "./material-list";
 
 export const Left: React.FC = () => {
   const { token } = theme.useToken();
@@ -18,11 +19,13 @@ export const Left: React.FC = () => {
         <div>
           <Space size={12} direction="vertical" style={{ width: "100%" }}>
             <Typography.Text type="secondary">基础组件</Typography.Text>
+            <MaterialList />
             {/* <Materials components={__baseMaterias__} /> */}
           </Space>
           <Divider />
           <Space size={12} direction="vertical" style={{ width: "100%" }}>
-            <Typography.Text type="secondary">Arco Design</Typography.Text>
+            <Typography.Text type="secondary">元素组件</Typography.Text>
+            <MaterialList />
             {/* <Materials components={__arcoDesignMaterias} /> */}
           </Space>
           <Divider />
